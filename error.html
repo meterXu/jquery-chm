@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <title>error([[data],fn]) | jQuery API 中文手册</title>
-<meta name="author" content="jQuery 中文手册 - hemin.cn/jq/">
-<meta name="description" content="jQuery中文手册(在线版),作者:hemin,在线手册:hemin.cn/jq/,下载:hemin.cn/jq/downloads/">
-<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="http://hemin.cn/jq/style/style.css"  />
-<script type="text/javascript" src="js/jquery.min.js" tppabs="http://hemin.cn/jq/js/jquery.min.js"></script>
-<script type="text/javascript" src="js/js.js" tppabs="http://hemin.cn/jq/js/js.js"></script>
+<meta name="author" content="jQuery 中文手册">
+<meta name="description" content="jQuery中文手册(在线�?,作�?hemin,在线手册:hemin.cn/jq/,下载:hemin.cn/jq/downloads/">
+<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="style/style.css"  />
+<script type="text/javascript" src="js/jquery.min.js" tppabs="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.js" tppabs="js/js.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,17 +21,17 @@
 <body id="split">
 <div id="content" class="a2">
   <div rel="error">
-    <h2><span>返回值:jQuery</span>error([[data],fn])</h2>
+    <h2><span>返回�?jQuery</span>error([[data],fn])</h2>
     <h3>概述</h3>
     <div class="desc">
-      <p>当元素遇到错误（没有正确载入）时，发生 error 事件。</p>
+      <p>当元素遇到错误（没有正确载入）时，发�?error 事件�?/p>
       <div class="longdesc">
-        <p>这个函数会调用所有绑定到error事件上的函数，包括在对应元素上的浏览器默认行为。可以通过在某个绑定的函数中返回false来防止触发浏览器的默认行为。error事件通常可以在元素由于点击或者tab导航失去焦点时触发。</p>
-        <p>对于error事件，没有一个公众的标准。在大多数浏览器中，当页面的JavaScript发生错误时，window对象会触发error事件;当图像的src属性无效时，比如文件不存在或者图像数据错误时，也会触发图像对象的error事件。</p>
-        <p>如果异常是由window对象抛出，事件处理函数将会被传入三个参数：</p>
-        <p>1. 描述事件的信息 (&quot;varName is not defined&quot;, &quot;missing operator in expression&quot;, 等等.),</p>
+        <p>这个函数会调用所有绑定到error事件上的函数，包括在对应元素上的浏览器默认行为。可以通过在某个绑定的函数中返回false来防止触发浏览器的默认行为。error事件通常可以在元素由于点击或者tab导航失去焦点时触发�?/p>
+        <p>对于error事件，没有一个公众的标准。在大多数浏览器中，当页面的JavaScript发生错误时，window对象会触发error事件;当图像的src属性无效时，比如文件不存在或者图像数据错误时，也会触发图像对象的error事件�?/p>
+        <p>如果异常是由window对象抛出，事件处理函数将会被传入三个参数�?/p>
+        <p>1. 描述事件的信�?(&quot;varName is not defined&quot;, &quot;missing operator in expression&quot;, 等等.),</p>
         <p>2. 包含错误的文档的完整URL</p>
-        <p>3. 异常发生的行数 如果事件处理函数返回true，则表示事件已经被处理，浏览器将认为没有异常。</p>
+        <p>3. 异常发生的行�?如果事件处理函数返回true，则表示事件已经被处理，浏览器将认为没有异常�?/p>
         <p>更多相关信息: </p>
         <p><a href="javascript:if(confirm('http://msdn2.microsoft.com/en-us/library/ms536930.aspx  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://msdn2.microsoft.com/en-us/library/ms536930.aspx'" tppabs="http://msdn2.microsoft.com/en-us/library/ms536930.aspx">msdn - onerror Event</a></p>
         <p><a href="javascript:if(confirm('http://developer.mozilla.org/en/docs/DOM:window.onerror  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://developer.mozilla.org/en/docs/DOM:window.onerror'" tppabs="http://developer.mozilla.org/en/docs/DOM:window.onerror">Gecko DOM Reference - onerror Event</a></p>
@@ -42,10 +42,10 @@
     <h3>参数</h3>
     <div class="parameter">
       <h4><strong>fn</strong><span>Function</span><em>V1.0</em></h4>
-      <p>在每一个匹配元素的error事件中绑定的处理函数。</p>
+      <p>在每一个匹配元素的error事件中绑定的处理函数�?/p>
       <h4><strong>[data],fn</strong><span>String,Function</span><em>V1.4.3</em></h4>
-      <p><strong>data</strong>:error([Data], fn) 可传入data供函数fn处理。</p>
-      <p><strong>fn</strong>:在每一个匹配元素的error事件中绑定的处理函数。</p>
+      <p><strong>data</strong>:error([Data], fn) 可传入data供函数fn处理�?/p>
+      <p><strong>fn</strong>:在每一个匹配元素的error事件中绑定的处理函数�?/p>
     </div>
     <div class="example">
       <h3>示例</h3>

@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <title>jQuery.callbacks(flags) | jQuery API 中文手册</title>
-<meta name="author" content="jQuery 中文手册 - hemin.cn/jq/">
-<meta name="description" content="jQuery中文手册(在线版),作者:hemin,在线手册:hemin.cn/jq/,下载:hemin.cn/jq/downloads/">
-<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="http://hemin.cn/jq/style/style.css"  />
-<script type="text/javascript" src="js/jquery.min.js" tppabs="http://hemin.cn/jq/js/jquery.min.js"></script>
-<script type="text/javascript" src="js/js.js" tppabs="http://hemin.cn/jq/js/js.js"></script>
+<meta name="author" content="jQuery 中文手册">
+<meta name="description" content="jQuery中文手册(在线�?,作�?hemin,在线手册:hemin.cn/jq/,下载:hemin.cn/jq/downloads/">
+<link type="text/css" rel="stylesheet" href="style/style.css" tppabs="style/style.css"  />
+<script type="text/javascript" src="js/jquery.min.js" tppabs="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.js" tppabs="js/js.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,19 +21,19 @@
 <body id="split">
 <div id="content" class="a2">
   <div rel="jQuery.callbacks">
-    <h2><span>返回值:jQuery</span>jQuery.callbacks(flags)</h2>
+    <h2><span>返回�?jQuery</span>jQuery.callbacks(flags)</h2>
     <h3>概述</h3>
     <div class="desc">
-      <p> 一个多用途的回调列表对象，提供了强大的的方式来管理回调函数列表。 </p>
+      <p> 一个多用途的回调列表对象，提供了强大的的方式来管理回调函数列表�?</p>
       <div class="longdesc">
-        <p>$.Callbacks()的内部提供了jQuery的$.ajax()&nbsp;和&nbsp;$.Deferred()&nbsp;基本功能组件。它可以用来作为类似基础定义的新组件的功能。</p>
+        <p>$.Callbacks()的内部提供了jQuery�?.ajax()&nbsp;�?nbsp;$.Deferred()&nbsp;基本功能组件。它可以用来作为类似基础定义的新组件的功能�?/p>
         <p>$.Callbacks()&nbsp;支持的方法，包括&nbsp;<a href="javascript:if(confirm('http://www.css88.com/callbacks.add/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.css88.com/callbacks.add/'" tppabs="http://www.css88.com/callbacks.add/">callbacks.add()</a>,<a href="javascript:if(confirm('http://www.css88.com/callbacks.remove/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.css88.com/callbacks.remove/'" tppabs="http://www.css88.com/callbacks.remove/">callbacks.remove()</a>,&nbsp;<a href="javascript:if(confirm('http://www.css88.com/callbacks.fire/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.css88.com/callbacks.fire/'" tppabs="http://www.css88.com/callbacks.fire/">callbacks.fire()</a>&nbsp;and&nbsp;<a href="javascript:if(confirm('http://www.css88.com/callbacks.disable/  \n\n�ļ���δ�� Teleport Pro ȡ�أ���Ϊ �������·��������ʼ��ַ�����õķ�Χ��  \n\n��Ҫ�ӷ������ϴ�����'))window.location='http://www.css88.com/callbacks.disable/'" tppabs="http://www.css88.com/callbacks.disable/">callbacks.disable()</a>.</p>
       </div>
     </div>
     <h3>参数</h3>
     <div class="parameter">
       <h4><strong>flags</strong><em>V1.7</em></h4>
-      <p> 一个用空格标记分隔的标志可选列表,用来改变回调列表中的行为 </p>
+      <p> 一个用空格标记分隔的标志可选列�?用来改变回调列表中的行为 </p>
     </div>
     <div class="example">
       <h3>示例</h3>
@@ -49,16 +49,16 @@ function fn2( value ){
     fn1("fn2 says:" + value);
     return false;
 }</code></pre>
-      <p>这些可以添加为回调函数作为一个$.Callbacks的列表，并调用如下:</p>
+      <p>这些可以添加为回调函数作为一�?.Callbacks的列表，并调用如�?</p>
       <pre><code>var callbacks = $.Callbacks();
 callbacks.add( fn1 );
 callbacks.fire( "foo!" ); // outputs: foo!
 
 callbacks.add( fn2 );
 callbacks.fire( "bar!" ); // outputs: bar!, fn2 says: bar!</code></pre>
-      <p>这样做的结果是，它使构造复杂的回调列表变得简单，输入值可以通过尽可能多的函数根据需要轻松使用。</p>
-      <p>用于以上的两个具体的方法：&nbsp;.add()&nbsp;和&nbsp;.fire()&nbsp;.add() 支持添加新的回调回调列表, 而.fire()&nbsp;提供了一种用于处理在同一列表中的回调方法的途径.</p>
-      <p>另一种方法由$.Callbacks&nbsp;的remove()，用于从回调列表中删除一个特定的回调。下面是.remove() 使用的一个例子:</p>
+      <p>这样做的结果是，它使构造复杂的回调列表变得简单，输入值可以通过尽可能多的函数根据需要轻松使用�?/p>
+      <p>用于以上的两个具体的方法�?nbsp;.add()&nbsp;�?nbsp;.fire()&nbsp;.add() 支持添加新的回调回调列表, �?fire()&nbsp;提供了一种用于处理在同一列表中的回调方法的途径.</p>
+      <p>另一种方法由$.Callbacks&nbsp;的remove()，用于从回调列表中删除一个特定的回调。下面是.remove() 使用的一个例�?</p>
       <pre><code>var callbacks = $.Callbacks();
 callbacks.add( fn1 );
 callbacks.fire( "foo!" ); // outputs: foo!
@@ -70,17 +70,17 @@ callbacks.remove(fn2);
 callbacks.fire( "foobar" ); 
 
 // only outputs foobar, as fn2 has been removed.</code></pre>
-      <h4>支持的 Flags描述:</h4>
-      <p>这个 flags 参数是$.Callbacks()的一个可选参数, 结构为一个用空格标记分隔的标志可选列表,用来改变回调列表中的行为 (比如. $.Callbacks( 'unique stopOnFalse' )).</p>
+      <h4>支持�?Flags描述:</h4>
+      <p>这个 flags 参数�?.Callbacks()的一个可选参�? 结构为一个用空格标记分隔的标志可选列�?用来改变回调列表中的行为 (比如. $.Callbacks( 'unique stopOnFalse' )).</p>
       <p>&nbsp;</p>
-      <p><strong>可用的 flags: </strong></p>
+      <p><strong>可用�?flags: </strong></p>
       <ul>
-        <li>once: 确保这个回调列表只执行一次(像一个递延 Deferred).</li>
-        <li>memory: 保持以前的值和将添加到这个列表的后面的最新的值立即执行调用任何回调 (像一个递延 Deferred).</li>
-        <li>unique: 确保一次只能添加一个回调(所以有没有在列表中的重复).</li>
-        <li>stopOnFalse: 当一个回调返回false 时中断调用</li>
+        <li>once: 确保这个回调列表只执行一�?像一个递延 Deferred).</li>
+        <li>memory: 保持以前的值和将添加到这个列表的后面的最新的值立即执行调用任何回�?(像一个递延 Deferred).</li>
+        <li>unique: 确保一次只能添加一个回�?所以有没有在列表中的重�?.</li>
+        <li>stopOnFalse: 当一个回调返回false 时中断调�?/li>
       </ul>
-      <p>默认情况下，回调列表将像事件的回调列表中可以多次触发。</p>
+      <p>默认情况下，回调列表将像事件的回调列表中可以多次触发�?/p>
       <p>如何在理想情况下应该使用的flags的例子，见下文：</p>
       <p>&nbsp;</p>
       <p><strong>$.Callbacks( 'once' ):</strong></p>
@@ -158,7 +158,7 @@ foo
 bar
 foobar
 */</code></pre>
-      <p> 因为$.Callbacks() 支持一个列表的flags而不仅仅是一个，设置几个flags，有一个累积效应，类似&ldquo;&amp;&amp;&rdquo;。这意味着它可能结合创建回调名单，<em>unique</em>&nbsp;和<em>确保如果名单已经触发，将有更多的回调调用最新的触发值</em>&nbsp;(i.e.$.Callbacks(&quot;unique memory&quot;)). </p>
+      <p> 因为$.Callbacks() 支持一个列表的flags而不仅仅是一个，设置几个flags，有一个累积效应，类似&ldquo;&amp;&amp;&rdquo;。这意味着它可能结合创建回调名单，<em>unique</em>&nbsp;�?em>确保如果名单已经触发，将有更多的回调调用最新的触发�?/em>&nbsp;(i.e.$.Callbacks(&quot;unique memory&quot;)). </p>
       <p>&nbsp;</p>
       <p><strong>$.Callbacks( 'unique memory' ):</strong></p>
       <pre><code>function fn1( value ){
@@ -192,7 +192,7 @@ baz
 fn2 says:baz
 foobar
 */</code></pre>
-      <p>Flag结合体是使用的$.Callbacks()内部的.done()&nbsp;和&nbsp;.fail()一个递延容器-它们都使用&nbsp;$.Callbacks('memory once').</p>
+      <p>Flag结合体是使用�?.Callbacks()内部�?done()&nbsp;�?nbsp;.fail()一个递延容器-它们都使�?nbsp;$.Callbacks('memory once').</p>
       <p>$.Callbacks 方法也可以被分离, 为方便起见应该有一个需要定义简写版本：</p>
       <pre><code>var callbacks = $.Callbacks(),
     add = callbacks.add,
@@ -203,8 +203,8 @@ add( fn1 );
 fire( "hello world");
 remove( fn1 );</code></pre>
       <h4>$.Callbacks, $.Deferred and Pub/Sub</h4>
-      <p> pub / sub（ Observer模式）背后的一般思路 是促进应用程序的松散耦合。而比对其他对象的方法调用的单个对象，一个对象，而不是另一个对象的一个特定的任务或活动，并通知当它发生。观察家也被称为订阅者，我们指的出版商（或主体）观察对象。出版商事件发生时通知用户 </p>
-      <p> 作为一个组件$.Callbacks()创造能力，它可以实现一个pub / sub系统只使用回调列表。使用$.Callbacks作为主题队列，发布和订阅的主题系统可以实现如下: </p>
+      <p> pub / sub�?Observer模式）背后的一般思路 是促进应用程序的松散耦合。而比对其他对象的方法调用的单个对象，一个对象，而不是另一个对象的一个特定的任务或活动，并通知当它发生。观察家也被称为订阅者，我们指的出版商（或主体）观察对象。出版商事件发生时通知用户 </p>
+      <p> 作为一个组�?.Callbacks()创造能力，它可以实现一个pub / sub系统只使用回调列表。使�?.Callbacks作为主题队列，发布和订阅的主题系统可以实现如�? </p>
       <pre><code>var topics = {};
 
 jQuery.Topic = function( id ) {
@@ -224,7 +224,7 @@ jQuery.Topic = function( id ) {
     }
     return topic;
 };</code></pre>
-      <p>然后，可以很容易的使用这部分应用程序的发布和订阅感兴趣的事件：</p>
+      <p>然后，可以很容易的使用这部分应用程序的发布和订阅感兴趣的事件�?/p>
       <pre><code>// Subscribers
 $.Topic( "mailArrived" ).subscribe( fn1 );
 $.Topic( "mailArrived" ).subscribe( fn2 );
@@ -245,7 +245,7 @@ hello world!
 fn2 says: hello world!
 woo! mail!
 */</code></pre>
-      <p>虽然这是有用的，可以采取进一步的实施。使用$.Deferreds,这是可能的，以确保发表者只为用户发布一次特别的任务已经完成（解决）通知。这可能是如何在实践中使用的一些进一步的评论，请参见下面的代码示例：</p>
+      <p>虽然这是有用的，可以采取进一步的实施。使�?.Deferreds,这是可能的，以确保发表者只为用户发布一次特别的任务已经完成（解决）通知。这可能是如何在实践中使用的一些进一步的评论，请参见下面的代码示例：</p>
       <pre><code>// subscribe to the mailArrived notification
 $.Topic( "mailArrived" ).subscribe( fn1 );
 
